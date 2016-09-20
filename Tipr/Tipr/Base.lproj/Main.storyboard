@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Tip-->
+        <!--Tipr-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipr" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.24843750000000001" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="35"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,6 +84,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Split Total"/>
                                 <connections>
+                                    <action selector="splitButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXq-DG-V1d"/>
                                     <segue destination="Xhs-OL-GvD" kind="push" id="Xyh-RJ-dqZ"/>
                                 </connections>
                             </button>
@@ -123,7 +124,7 @@
                             <outletCollection property="gestureRecognizers" destination="6h6-bz-bIj" appends="YES" id="PDm-d5-f60"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip" id="I2H-a8-whb">
+                    <navigationItem key="navigationItem" title="Tipr" id="I2H-a8-whb">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="x35-MU-waK"/>
                     </navigationItem>
                     <connections>
@@ -220,9 +221,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Split Total" id="BvW-CY-sjI">
                         <barButtonItem key="backBarButtonItem" title="Tip" id="Ynq-uj-D8U"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="vP3-Rn-fzc"/>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="numberPeopleLabel" destination="dUF-DF-aGG" id="XTg-c0-CMq"/>
                         <outlet property="stepper" destination="vxC-V2-EZU" id="I5G-Sh-nhw"/>

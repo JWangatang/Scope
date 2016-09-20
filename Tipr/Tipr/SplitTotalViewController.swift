@@ -38,5 +38,10 @@ class SplitTotalViewController: UIViewController {
         totalPerPerson.text = String (format: "$%.2f", newTotal)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! ViewController
+        vc.splitButton = false
+    }
+    
     
 }
