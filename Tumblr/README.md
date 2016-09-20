@@ -7,3 +7,5 @@ September 2016
 - Pull refresh
 
 ###Collaborator(s):
+- @zdenham
+- Reviewer: @klampotang
