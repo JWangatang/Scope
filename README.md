@@ -2,11 +2,9 @@
 USC Scope Club Projects - http://scopeusc.com/
 
 ### Tipr 
-######Swift/iOS
+######iOS/Swift
+Tip Calculator application.
 
-Basic Tip Calculator application.
-
-### Tumblr
-######Swift/iOS
-Custom table view of posts from the Humans of New York Tumblr page
-Uses AFNetworking framework
+### Tumblr Feed
+######iOS/Swift
+TableView Application pulling from the Humans of NY Tumblr
