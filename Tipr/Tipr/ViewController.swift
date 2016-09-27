@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitTotalButton: UIButton!
     
     var tipPercent : Float = 0.1
-    var splitButton : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,18 +64,13 @@ class ViewController: UIViewController {
         let tPercent = tipPercent*100
         tipPercentageLabel.text = String(format: "%.1f%%", tPercent)
     }
-    @IBAction func splitButtonClicked(sender: AnyObject) {
-        splitButton = true;
-    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(splitButton){
-            let bill = Double(billTF.text!) ?? 0
-            let tip = Float(bill) * tipPercent
-            let total = Float(bill) + tip
-            let vc = segue.destinationViewController as! SplitTotalViewController
-            vc.totalValue = total
-        }
+        let bill = Double(billTF.text!) ?? 0
+        let tip = Float(bill) * tipPercent
+        let total = Float(bill) + tip
+        let vc = segue.destinationViewController as! SplitTotalViewController
+        vc.totalValue = total
     }
 }
 

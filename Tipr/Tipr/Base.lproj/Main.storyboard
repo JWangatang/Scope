@@ -84,7 +84,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Split Total"/>
                                 <connections>
-                                    <action selector="splitButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXq-DG-V1d"/>
                                     <segue destination="Xhs-OL-GvD" kind="push" id="Xyh-RJ-dqZ"/>
                                 </connections>
                             </button>
