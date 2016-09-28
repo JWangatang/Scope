@@ -1,5 +1,5 @@
 # Scope
-USC Scope Club Projects - http://scopeusc.com/
+USC Scope Club iOS/Swift Projects - http://scopeusc.com/
 
 ### Tipr 
 ######iOS/Swift
@@ -10,5 +10,5 @@ Tip Calculator application.
 TableView Application pulling from the Humans of NY Tumblr
 
 ### ParseChat
-#######iOS/Swift
+######iOS/Swift
 Login and Chat application made with Parse
