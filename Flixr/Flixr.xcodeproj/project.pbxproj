@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		ABB091A51D9241CF003CC0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB091A41D9241CF003CC0CC /* AppDelegate.swift */; };
-		ABB091A71D9241CF003CC0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB091A61D9241CF003CC0CC /* ViewController.swift */; };
 		ABB091AA1D9241CF003CC0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB091A81D9241CF003CC0CC /* Main.storyboard */; };
 		ABB091AC1D9241CF003CC0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB091AB1D9241CF003CC0CC /* Assets.xcassets */; };
 		ABB091AF1D9241CF003CC0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB091AD1D9241CF003CC0CC /* LaunchScreen.storyboard */; };
+		ABCA826E1DA1B74400B5AF44 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA826D1DA1B74400B5AF44 /* MovieViewController.swift */; };
+		ABCA82701DA1C3D300B5AF44 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA826F1DA1C3D300B5AF44 /* MovieTableViewCell.swift */; };
+		ABECE1461DA2272C009DE363 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECE1451DA2272C009DE363 /* MovieDetailViewController.swift */; };
 		B4A2340907F84D0DF923000D /* Pods_Flixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704E303C0DEA7BE3A9CC7B75 /* Pods_Flixr.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +22,13 @@
 		8A85849BC6DD0CCB67D4D38B /* Pods-Flixr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flixr/Pods-Flixr.release.xcconfig"; sourceTree = "<group>"; };
 		ABB091A11D9241CF003CC0CC /* Flixr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB091A41D9241CF003CC0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABB091A61D9241CF003CC0CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABB091A91D9241CF003CC0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABB091AB1D9241CF003CC0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABB091AE1D9241CF003CC0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABB091B01D9241CF003CC0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABCA826D1DA1B74400B5AF44 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		ABCA826F1DA1C3D300B5AF44 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		ABECE1451DA2272C009DE363 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		BBEE2EB81E981B31C7609964 /* Pods-Flixr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flixr/Pods-Flixr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,14 +82,32 @@
 		ABB091A31D9241CF003CC0CC /* Flixr */ = {
 			isa = PBXGroup;
 			children = (
+				ABECE1441DA21F91009DE363 /* View Controllers */,
+				ABCA826C1DA1B73400B5AF44 /* Views */,
 				ABB091A41D9241CF003CC0CC /* AppDelegate.swift */,
-				ABB091A61D9241CF003CC0CC /* ViewController.swift */,
 				ABB091A81D9241CF003CC0CC /* Main.storyboard */,
 				ABB091AB1D9241CF003CC0CC /* Assets.xcassets */,
 				ABB091AD1D9241CF003CC0CC /* LaunchScreen.storyboard */,
 				ABB091B01D9241CF003CC0CC /* Info.plist */,
 			);
 			path = Flixr;
+			sourceTree = "<group>";
+		};
+		ABCA826C1DA1B73400B5AF44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA826F1DA1C3D300B5AF44 /* MovieTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		ABECE1441DA21F91009DE363 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABECE1451DA2272C009DE363 /* MovieDetailViewController.swift */,
+				ABCA826D1DA1B74400B5AF44 /* MovieViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB091A71D9241CF003CC0CC /* ViewController.swift in Sources */,
+				ABECE1461DA2272C009DE363 /* MovieDetailViewController.swift in Sources */,
 				ABB091A51D9241CF003CC0CC /* AppDelegate.swift in Sources */,
+				ABCA826E1DA1B74400B5AF44 /* MovieViewController.swift in Sources */,
+				ABCA82701DA1C3D300B5AF44 /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

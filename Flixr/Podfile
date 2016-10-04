@@ -7,5 +7,6 @@ target 'Flixr' do
 
   # Pods for Flixr
   pod ‘AFNetworking’
+  pod ‘MBProgressHUD’
 
 end
