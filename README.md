@@ -1,6 +1,7 @@
 # Scope
 USC Scope Club iOS/Swift Projects - http://scopeusc.com/
-Gifs and more details in each project folder!
+
+**Gifs and more details in each project folder!**
 
 ### Tipr 
 ######iOS/Swift
