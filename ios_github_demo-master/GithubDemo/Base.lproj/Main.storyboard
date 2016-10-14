@@ -117,7 +117,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="GitHubCell" rowHeight="148" id="h3y-PC-U6x" customClass="GitHubTableViewCell" customModule="GithubDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="148"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h3y-PC-U6x" id="5PN-Tc-Lxy">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="147.5"/>
@@ -203,7 +203,7 @@
                     <navigationItem key="navigationItem" title="Search" id="x5q-EH-pP8">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="Uzb-Ot-gxS">
                             <connections>
-                                <segue destination="Kw5-cn-5fU" kind="modal" modalTransitionStyle="flipHorizontal" id="2lO-zk-N0W"/>
+                                <segue destination="7q2-iI-Rhm" kind="push" id="myf-Gx-r9S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -400,6 +400,7 @@
         <image name="star" width="21" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="otv-t7-fiX"/>
+        <segue reference="uga-KY-Tak"/>
+        <segue reference="myf-Gx-r9S"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -77,6 +77,10 @@ class RepoResultsViewController: UIViewController, UITableViewDelegate, UITableV
             let dest = segue.destinationViewController as! DetailsViewController
             dest.repo = repos[tableView.indexPathForSelectedRow!.row]
         }
+        else{
+            let dest = segue.destinationViewController as! SettingsViewController
+            dest.sliderValue = Float(searchSettings.minStars)
+        }
     }
     
 }

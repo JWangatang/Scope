@@ -13,6 +13,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet var tableView: UITableView!
     @IBOutlet var slider: UISlider!
     @IBOutlet var numberStarsLabel: UILabel!
+    var sliderValue : Float!
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -20,6 +21,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        slider.value = sliderValue
+        numberStarsLabel.text = Int(sliderValue).description
         
         // Do any additional setup after loading the view.
     }
